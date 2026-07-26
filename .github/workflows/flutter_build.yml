@@ -27,7 +27,7 @@ jobs:
         working-directory: ./src/frontend
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4 # updated to v4
         with:
           name: flutter-build
           path: src/frontend/build/linux/x64/release/bundle/
