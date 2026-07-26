@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        wuth:
+        with:
           node-version: '24'
 
       - name: Set up Flutter
