@@ -1,0 +1,33 @@
+name: Flutter Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.44.8'
+          channel: 'stable'
+
+      - name: Install dependencies
+        run: flutter pub get
+        working-directory: ./src/frontend
+
+      - name: Build Linux
+        run: flutter build linux
+        working-directory: ./src/frontend
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: flutter-build
+          path: src/frontend/build/linux/x64/release/bundle/
