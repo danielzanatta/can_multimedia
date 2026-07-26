@@ -1,0 +1,42 @@
+# Flutter
+.dart_tool/
+build/
+.flutter-plugins
+.packages
+flutter_*.json
+.idea/
+*.iml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+e500-env/
+.vscode/
+
+# Docker
+*.log
+!docker-compose.yml
+.env
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Node-RED
+node_modules/
+*.backup.json
+
+# Hardware
+*.kicad_pcb-bak
+*.sch-bak
+*.pro-bak
+
+# Chaves e credenciais
+*.pem
+*.key
+*.secret
