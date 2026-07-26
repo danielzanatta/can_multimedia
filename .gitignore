@@ -23,7 +23,7 @@ e500-env/
 !docker-compose.yml
 .env
 
-# Sistema
+# System
 .DS_Store
 Thumbs.db
 
@@ -36,7 +36,7 @@ node_modules/
 *.sch-bak
 *.pro-bak
 
-# Chaves e credenciais
+# Credentials
 *.pem
 *.key
 *.secret
