@@ -1,0 +1,6 @@
+CAN ID (Hex),Signal Name,Unit,Description,Source (ECU),MQTT Topic,Decoding (DBC)
+0x123,Engine_RPM,RPM,Engine revolutions per minute,ECU,canbus/rpm,"data[0:2] * 0.125"
+0x456,Vehicle_Speed,km/h,Vehicle speed,ABS,canbus/speed,"data[3] * 1.0"
+0x789,Steering_Angle,°,Steering wheel angle,BCM,canbus/steering_angle,"data[1:3] * 0.1 - 1000"
+0xABC,TPMS_FL_Pressure,PSI,Front left tire pressure,TPMS Module,tpms/pressure/FL,"data[0] * 0.5"
+
